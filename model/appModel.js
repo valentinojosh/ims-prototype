@@ -1,17 +1,17 @@
 'use strict';
 var sql = require('./db.js');
 //Task object constructor
-var Item = function (item) {
-    this.injury_date = item.injury_date;
-    this.injury_time = item.injury_time;
-    this.name_of_injured= item.name_of_injured;
-    this.injury_location = item.injury_location;
-    this.treatment = item.treatment;
-    this.how_injury_occurred = item.how_injury_occurred;
-    this.facility_where_injury_Occured = item.facility_where_injury_Occured;
-    this.full_name_of_staff = item.full_name_of_staff;
+var MinorIncident = function (minorIncident) {
+    this.injury_date = minorIncident.injury_date;
+    this.injury_time = minorIncident.injury_time;
+    this.name_of_injured= minorIncident.name_of_injured;
+    this.injury_location = minorIncident.injury_location;
+    this.treatment = minorIncident.treatment;
+    this.how_injury_occurred = minorIncident.how_injury_occurred;
+    this.facility_where_injury_Occured = minorIncident.facility_where_injury_Occured;
+    this.full_name_of_staff = minorIncident.full_name_of_staff;
 };
-Item.getItemByID = function (minor_injury_id, result) {
+MinorIncident.getMinorIncidentByID = function (minor_injury_id, result) {
     sql.query("Select minor_injury_id, injury_date, injury_time, name_of_injured, injury_location, treatment, how_injury_occurred, facility_where_injury_Occured, full_name_of_staff from Minor_Injury_Log where minor_injury_id = ? ", minor_injury_id, function (err, res) {
         if (err) {
             console.log("error: ", err);
@@ -21,7 +21,7 @@ Item.getItemByID = function (minor_injury_id, result) {
         }
     });
 };
-Item.getAllItem = function (result) {
+MinorIncident.getAllMinorIncidents = function (result) {
     sql.query("Select * from Minor_Injury_Log", function (err, res) {
         if (err) {
             console.log("error: ", err);
@@ -32,5 +32,15 @@ Item.getAllItem = function (result) {
         }
     });
 };
-
-module.exports = Item;
+MinorIncident.createMinorIncident = function (newIncident, result) {
+    sql.query("INSERT INTO Minor_Injury_Log set ?", newIncident, function (err, res) {
+        if (err) {
+            console.log("error: ", err);
+            result(err, null);
+        } else {
+            console.log(res.insertId);
+            result(null, res.insertId);
+        }
+    });
+};
+module.exports = MinorIncident;
