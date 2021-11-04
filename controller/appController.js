@@ -33,3 +33,9 @@ exports.createMinorIncident = function (req, res) {
         });
     }
 };
+exports.deleteMinorIncident = function (req, res) {
+    minorIncident.remove(req.params.minor_injury_id, function (err) {
+        if (err) res.send(err);
+        res.json({message: 'Item successfully deleted'});
+    });
+};

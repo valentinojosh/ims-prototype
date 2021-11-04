@@ -43,4 +43,14 @@ MinorIncident.createMinorIncident = function (newIncident, result) {
         }
     });
 };
+MinorIncident.remove = function (minor_injury_id, result) {
+    sql.query("DELETE FROM Minor_Injury_Log WHERE minor_injury_id = ?", minor_injury_id, function (err, res) {
+        if (err) {
+            console.log("error: ", err);
+            result(null, err);
+        } else {
+            result(null, res);
+        }
+    });
+};
 module.exports = MinorIncident;

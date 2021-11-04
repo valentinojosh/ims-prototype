@@ -8,4 +8,5 @@ module.exports = function (app) {
 
     app.route('/fvsra/minorInjuryLog/:minor_injury_id')
         .get(todoList.read_a_minorIncident)
+        .delete(todoList.deleteMinorIncident)
 };
