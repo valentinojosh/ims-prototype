@@ -4,7 +4,7 @@ module.exports = function (app) {
     // todoList Routes
     app.route('/fvsra/minorInjuryLog')
         .get(todoList.list_all_minorIncidents)
-        //.post(todoList.create_a_item)
+        .post(todoList.createMinorIncident)
 
     app.route('/fvsra/minorInjuryLog/:minor_injury_id')
         .get(todoList.read_a_minorIncident)

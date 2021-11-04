@@ -8,11 +8,11 @@ var MinorIncident = function (minorIncident) {
     this.injury_location = minorIncident.injury_location;
     this.treatment = minorIncident.treatment;
     this.how_injury_occurred = minorIncident.how_injury_occurred;
-    this.facility_where_injury_Occured = minorIncident.facility_where_injury_Occured;
+    this.facility_where_injury_occurred = minorIncident.facility_where_injury_occurred;
     this.full_name_of_staff = minorIncident.full_name_of_staff;
 };
 MinorIncident.getMinorIncidentByID = function (minor_injury_id, result) {
-    sql.query("Select minor_injury_id, injury_date, injury_time, name_of_injured, injury_location, treatment, how_injury_occurred, facility_where_injury_Occured, full_name_of_staff from Minor_Injury_Log where minor_injury_id = ? ", minor_injury_id, function (err, res) {
+    sql.query("Select minor_injury_id, injury_date, injury_time, name_of_injured, injury_location, treatment, how_injury_occurred, facility_where_injury_occurred, full_name_of_staff from Minor_Injury_Log where minor_injury_id = ? ", minor_injury_id, function (err, res) {
         if (err) {
             console.log("error: ", err);
             result(err, null);
