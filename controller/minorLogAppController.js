@@ -1,5 +1,5 @@
 'use strict';
-var minorIncident = require('../model/appModel.js');
+var minorIncident = require('../model/minorLogAppModel.js');
 
 exports.list_all_minorIncidents = function (req, res) {
     console.log("LIST ALL Items");
@@ -37,5 +37,11 @@ exports.deleteMinorIncident = function (req, res) {
     minorIncident.remove(req.params.minor_injury_id, function (err) {
         if (err) res.send(err);
         res.json({message: 'Item successfully deleted'});
+    });
+};
+exports.updateMinorIncident = function (req, res) {
+    minorIncident.updateMinorIncidentByID(req.params.minor_injury_id, new minorIncident(req.body), function (err, item) {
+        if (err) res.send(err);
+        res.json(item);
     });
 };
