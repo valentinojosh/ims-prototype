@@ -2,7 +2,7 @@
 var minorIncident = require('../model/minorLogAppModel.js');
 
 exports.list_all_minorIncidents = function (req, res) {
-    console.log("LIST ALL Items");
+    console.log("LIST ALL MINOR ACCIDENTS");
     minorIncident.getAllMinorIncidents(function (err, item) {
         console.log('controller');
         res.setHeader('Content-Type', 'application/json');

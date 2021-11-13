@@ -1,13 +1,20 @@
 'use strict';
 module.exports = function (app) {
-    var todoList = require('../controller/minorLogAppController');
-    // todoList Routes
+    var todoList1 = require('../controller/minorLogAppController');
+    // todoList1 Routes
     app.route('/fvsra/minorInjuryLog')
-        .get(todoList.list_all_minorIncidents)
-        .post(todoList.createMinorIncident)
-
+        .get(todoList1.list_all_minorIncidents)
+        .post(todoList1.createMinorIncident)
     app.route('/fvsra/minorInjuryLog/:minor_injury_id')
-        .get(todoList.read_a_minorIncident)
-        .delete(todoList.deleteMinorIncident)
-        .put(todoList.updateMinorIncident)
+        .get(todoList1.read_a_minorIncident)
+        .delete(todoList1.deleteMinorIncident)
+        .put(todoList1.updateMinorIncident)
+
+    var todoList2 = require('../controller/vehicleAccidentAppController');
+    // todoList2 Routes
+    app.route('/fvsra/vehicleAccidentReport')
+        .get(todoList2.list_all_vehicleAccidents)
+    app.route('/fvsra/vehicleAccidentReport/:vehicle_accident_id')
+        .get(todoList2.read_a_vehicleAccident)
+
 };
