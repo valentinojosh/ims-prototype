@@ -55,14 +55,4 @@ MinorIncident.remove = function (minor_injury_id, result) {
         }
     });
 };
-MinorIncident.updateMinorIncidentByID = function (minor_injury_id, newIncident, result) {
-    sql.query("UPDATE Minor_Injury_Log SET name_of_injured = ? WHERE minor_injury_id = ?", [newIncident.name_of_injured, minor_injury_id], function (err, res) {
-        if (err) {
-            console.log("error: ", err);
-            result(null, err);
-        } else {
-            result(null, res);
-        }
-    });
-};
 module.exports = MinorIncident;

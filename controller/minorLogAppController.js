@@ -39,9 +39,3 @@ exports.deleteMinorIncident = function (req, res) {
         res.json({message: 'Item successfully deleted'});
     });
 };
-exports.updateMinorIncident = function (req, res) {
-    minorIncident.updateMinorIncidentByID(req.params.minor_injury_id, new minorIncident(req.body), function (err, item) {
-        if (err) res.send(err);
-        res.json(item);
-    });
-};

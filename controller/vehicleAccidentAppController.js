@@ -17,5 +17,25 @@ exports.read_a_vehicleAccident = function (req, res) {
         res.json(item);
     });
 };
+exports.createVehicleAccident = function (req, res) {
+    console.log("POST CREATED");
+    var new_vehicleAccident = new vehicleAccident(req.body);
+    console.log( vehicleAccident );
+    //handles null error
+    if (!new_vehicleAccident.Name_of_the_Agency) {
+        res.status(400).send({error: true, message: 'Please provide vehicle accident'});
+    } else {
+        vehicleAccident.createVehicleAccident(new_vehicleAccident, function (err, item) {
+            if (err) res.send(err);
+            res.json(item);
+        });
+    }
+};
+exports.deleteVehicleAccident = function (req, res) {
+    vehicleAccident.remove(req.params.vehicle_accident_id, function (err) {
+        if (err) res.send(err);
+        res.json({message: 'Item successfully deleted'});
+    });
+};
 
 
