@@ -2,7 +2,7 @@
 var minorIncident = require('../model/minorLogAppModel.js');
 
 exports.list_all_minorIncidents = function (req, res) {
-    console.log("LIST ALL Items");
+    console.log("LIST ALL MINOR ACCIDENTS");
     minorIncident.getAllMinorIncidents(function (err, item) {
         console.log('controller');
         res.setHeader('Content-Type', 'application/json');
@@ -37,11 +37,5 @@ exports.deleteMinorIncident = function (req, res) {
     minorIncident.remove(req.params.minor_injury_id, function (err) {
         if (err) res.send(err);
         res.json({message: 'Item successfully deleted'});
-    });
-};
-exports.updateMinorIncident = function (req, res) {
-    minorIncident.updateMinorIncidentByID(req.params.minor_injury_id, new minorIncident(req.body), function (err, item) {
-        if (err) res.send(err);
-        res.json(item);
     });
 };
