@@ -30,6 +30,12 @@
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
+.greenUnderline{
+  border-bottom: 3px solid #4AC5AC;
+  width: max-content;
+  margin: auto;
+  padding: 0px 4px 0px 4px;
+}
 
 * {
 	margin: 0px; 
@@ -108,10 +114,10 @@ textarea:focus:-moz-placeholder { color:transparent; }
 textarea:focus::-moz-placeholder { color:transparent; }
 textarea:focus:-ms-input-placeholder { color:transparent; }
 
-input::-webkit-input-placeholder { color: #fff;}
-input:-moz-placeholder { color: #fff;}
-input::-moz-placeholder { color: #fff;}
-input:-ms-input-placeholder { color: #fff;}
+input::-webkit-input-placeholder { color: #4AC5AC;}
+input:-moz-placeholder { color: #4AC5AC;}
+input::-moz-placeholder { color: #4AC5AC;}
+input:-ms-input-placeholder { color: #4AC5AC;}
 
 textarea::-webkit-input-placeholder { color: #fff;}
 textarea:-moz-placeholder { color: #fff;}
@@ -188,26 +194,14 @@ iframe {
   left: 0;
   background-color: rgba(255,255,255,0.9);
 }
-.container-stack{
-  position: relative;
-}
-
-.formtext{
-  color: white;
-  font-size: 25px;
-}
 
 .wrap-login100 {
   width: 500px;
   border-radius: 10px;
   overflow: hidden;
-  padding: 45px 45px 45px 45px;
-  margin: 10px;
-  background: #9152f8;
-  background: -webkit-linear-gradient(top, #7579ff, #b224ef);
-  background: -o-linear-gradient(top, #7579ff, #b224ef);
-  background: -moz-linear-gradient(top, #7579ff, #b224ef);
-  background: linear-gradient(top, #7579ff, #b224ef);
+  padding: 55px 55px 37px 55px;
+  /*background-image: radial-gradient( circle at top 21% left 50% ,  rgba(239,249,249,1) 0%, rgba(88, 159, 209, 0.6)  20% );*/
+  background-image: radial-gradient( circle at top 21% left 50% ,  rgba(239,249,249,1) 0%, rgba(182,199,226,0.80) 27% );
 }
 
 
@@ -239,7 +233,7 @@ iframe {
 .login100-form-title {
   font-family: Poppins-Medium;
   font-size: 30px;
-  color: #fff;
+  color: #191645;
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
@@ -261,7 +255,7 @@ iframe {
 .input100 {
   font-family: Poppins-Regular;
   font-size: 16px;
-  color: #fff;
+  color: #191645;
   line-height: 1.2;
 
   display: block;
@@ -296,13 +290,13 @@ iframe {
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 
-  background: #fff;
+  background: #4AC5AC;
 }
 
 .focus-input100::after {
   font-family: Material-Design-Iconic-Font;
   font-size: 22px;
-  color: #fff;
+  color: #191645;
 
   content: attr(data-placeholder);
   display: block;
@@ -400,7 +394,77 @@ iframe {
 .input-checkbox100:checked + .label-checkbox100::before {
   color: #555555;
 }
+/*------------------------------------------------------------------
+[ Custom Button ]*/
+.container-custombutton {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.custombutton {
+  font-family: Poppins-Medium;
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.2;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 120px;
+  height: 50px;
+  border-radius: 25px;
+
+  background: #4AC5AC;
+  /*background: -webkit-linear-gradient(bottom, #7579ff, #b224ef);*/
+  /*background: -o-linear-gradient(bottom, #7579ff, #b224ef);*/
+  /*background: -moz-linear-gradient(bottom, #7579ff, #b224ef);*/
+  /*background: linear-gradient(bottom, #7579ff, #b224ef);*/
+  position: relative;
+  z-index: 1;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.custombutton::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  opacity: 1;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.custombutton:hover {
+  color: #fff;
+}
+
+.custombutton:hover:before {
+  opacity: 0;
+}
 
 /*------------------------------------------------------------------
 [ Button ]*/
@@ -414,6 +478,7 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 
 .login100-form-btn {
   font-family: Poppins-Medium;
