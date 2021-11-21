@@ -13,7 +13,7 @@ module.exports = function (app) {
     // todoList2 Routes
     app.route('/fvsra/vehicleAccidentReport')
         .get(todoList2.list_all_vehicleAccidents)
-        .get(todoList2.createVehicleAccident)
+        .post(todoList2.createVehicleAccident)
     app.route('/fvsra/vehicleAccidentReport/:vehicle_accident_id')
         .get(todoList2.read_a_vehicleAccident)
         .delete(todoList2.deleteVehicleAccident)
