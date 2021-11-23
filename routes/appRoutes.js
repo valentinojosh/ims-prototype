@@ -18,5 +18,12 @@ module.exports = function (app) {
         .get(todoList2.read_a_vehicleAccident)
         .delete(todoList2.deleteVehicleAccident)
 
+    var todoList3 = require('../controller/employeeInjuryReportAppController');
+    // todoList3 Routes
+    app.route('/fvsra/employeeInjuryReport')
+        .get(todoList3.list_all_employeeInjuryReports)
+    app.route('/fvsra/employeeInjuryReport')
+        .get(todoList3.read_a_employeeInjuryReport)
+        .delete(todoList3.deleteMinorIncident)
 
 };
