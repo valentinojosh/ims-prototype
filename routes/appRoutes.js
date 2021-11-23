@@ -1,29 +1,35 @@
 'use strict';
 module.exports = function (app) {
-    var todoList1 = require('../controller/minorLogAppController');
-    // todoList1 Routes
+    var minorLogList = require('../controller/minorLogAppController');
     app.route('/fvsra/minorInjuryLog')
-        .get(todoList1.list_all_minorIncidents)
-        .post(todoList1.createMinorIncident)
+        .get(minorLogList.list_all_minorIncidents)
+        .post(minorLogList.createMinorIncident)
     app.route('/fvsra/minorInjuryLog/:minor_injury_id')
-        .get(todoList1.read_a_minorIncident)
-        .delete(todoList1.deleteMinorIncident)
+        .get(minorLogList.read_a_minorIncident)
+        .delete(minorLogList.deleteMinorIncident)
 
-    var todoList2 = require('../controller/vehicleAccidentAppController');
+    var form01 = require('../controller/accidentIncidentAppController')
+    app.route('/fvsra/accidentIncidentReport')
+        .get(form01.list_all_accidentIncidentReports)
+    app.route('/fvsra/accidentIncidentReport')
+        .get(form01.createAccidentIncidentReport) //Not Tested
+        .delete(form01.deleteAccidentIncidentReport) //Not Tested
+
+    var form02 = require('../controller/vehicleAccidentAppController');
     // todoList2 Routes
     app.route('/fvsra/vehicleAccidentReport')
-        .get(todoList2.list_all_vehicleAccidents)
-        .post(todoList2.createVehicleAccident)
+        .get(form02.list_all_vehicleAccidents)
+        .post(form02.createVehicleAccident)
     app.route('/fvsra/vehicleAccidentReport/:vehicle_accident_id')
-        .get(todoList2.read_a_vehicleAccident)
-        .delete(todoList2.deleteVehicleAccident)
+        .get(form02.read_a_vehicleAccident)
+        .delete(form02.deleteVehicleAccident)
 
-    var todoList3 = require('../controller/employeeInjuryReportAppController');
+    var form04 = require('../controller/employeeInjuryReportAppController');
     // todoList3 Routes
     app.route('/fvsra/employeeInjuryReport')
-        .get(todoList3.list_all_employeeInjuryReports)
+        .get(form04.list_all_employeeInjuryReports)
     app.route('/fvsra/employeeInjuryReport')
-        .get(todoList3.read_a_employeeInjuryReport)
-        .delete(todoList3.deleteMinorIncident)
+        .get(form04.read_a_employeeInjuryReport) //Not Tested
+        .delete(form04.deleteMinorIncident) //Not Tested
 
 };

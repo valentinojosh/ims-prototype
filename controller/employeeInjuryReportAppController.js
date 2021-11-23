@@ -17,7 +17,7 @@ exports.read_a_employeeInjuryReport = function (req, res) {
         res.json(item);
     });
 };
-exports.createMinorIncident = function (req, res) {
+exports.createEmployeeInjuryReport = function (req, res) {
     console.log("POST CREATED");
     var new_employeeIncident = new employeeIncident(req.body);
     console.log( new_employeeIncident );
