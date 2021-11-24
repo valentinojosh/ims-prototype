@@ -8,7 +8,7 @@ module.exports = function (app) {
         .get(minorLogList.read_a_minorIncident)
         .delete(minorLogList.deleteMinorIncident)
 
-    var form01 = require('../controller/accidentIncidentAppController')
+    var form01 = require('../controller/accidentIncidentAppController') //This is what I'm working on next
     app.route('/fvsra/accidentIncidentReport')
         .get(form01.list_all_accidentIncidentReports)
     app.route('/fvsra/accidentIncidentReport')
@@ -24,7 +24,7 @@ module.exports = function (app) {
         .get(form02.read_a_vehicleAccident)
         .delete(form02.deleteVehicleAccident)
 
-    var form04 = require('../controller/employeeInjuryReportAppController');
+    var form04 = require('../controller/employeeInjuryReportAppController'); //Waiting for the DB table to be finished
     // todoList3 Routes
     app.route('/fvsra/employeeInjuryReport')
         .get(form04.list_all_employeeInjuryReports)

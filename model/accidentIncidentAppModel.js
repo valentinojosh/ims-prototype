@@ -2,11 +2,16 @@
 var sql = require('./db.js');
 //Task object constructor
 var AccidentInjury = function (accidentInjury) {
-    //this.injury_date = minorIncident.injury_date;
+    this.Name_of_the_Agency = accidentInjury.Name_of_the_Agency;
+    this.Todays_Date = accidentInjury.Todays_Date;
+    this.Date_of_Incident= accidentInjury.Date_of_Incident;
+    this.Time_Of_Incident = accidentInjury.Time_Of_Incident;
+    this.Name_of_the_person_Completing_the_report = accidentInjury.Name_of_the_person_Completing_the_report;
+    this.Title_Of_Person_Completing_the_report = accidentInjury.Title_Of_Person_Completing_the_report;
+    this.Business_Phone = accidentInjury.Business_Phone;
 
 };
 AccidentInjury.getAccidentInjuryByID = function (accident_incident_id, result) {
-    //sql.query("Select minor_injury_id, injury_date, injury_time, name_of_injured, injury_location, treatment, how_injury_occurred, facility_where_injury_occurred, full_name_of_staff from Minor_Injury_Log where minor_injury_id = ? ", minor_injury_id, function (err, res) {
     sql.query("Select * from Accident_Incident_Report WHERE accident_incident_id = ? ", accident_incident_id, function (err, res) {
 
         if (err) {
@@ -23,7 +28,7 @@ AccidentInjury.getAllAccidentIncidentReports = function (result) {
             console.log("error: ", err);
             result(null, err);
         } else {
-            console.log('Lost Items : ', res);
+            console.log('Accident Incident Reports : ', res);
             result(null, res);
         }
     });
