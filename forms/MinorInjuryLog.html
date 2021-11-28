@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minor Injury Log</title>
+    <link rel="stylesheet" href="../css/MinorInjuryLogCSS.css">
+    <meta name = "viewport" content="width=device-width">
+</head>
+<body>
+
+
+<img class="FVSRA" src="../assets/imgs/FVSRA.png">
+
+<table class="shift-down">
+    <col width="120">
+    <col width="110">
+    <col width="220">
+    <col width="130">
+    <col width="150">
+    <col width="350">
+    <col width="200">
+    <col width="140">
+    <thead>
+    <tr>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Name of Injury</th>
+        <th>Injury Location</th>
+        <th>Treatment</th>
+        <th>How injury occurred</th>
+        <th>Facility/Location where injury occurred</th>
+        <th>Full Name of staff who noticed guardian</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><input type="date" name="date" id="date"></td>
+        <td><input type="time" name="time" id="time"></td>
+        <td><input type="text" placeholder="i.e Incision" name="injury" id="injury"></td>
+        <td><input type="text" placeholder="i.e Right Leg" name="injury-location" id="injury-location"></td>
+        <td><input type="text" placeholder="i.e Bandage" name="treatment" id="treatment"></td>
+        <td><input type="text" placeholder="i.e Slipped on wet floor" name="injury-occur" id="injury-occur"></td>
+        <td><input type="text" placeholder="i.e Food Court" name="facility" id="facility"></td>
+        <td><input type="text" placeholder="John Doe" name="staff-name" id="staff-name"></td>
+    </tr>
+    </tbody>
+</table>
+
+
+</body>
+<footer class="bottom">
+    <button class="submit">Submit</button>
+</footer>
+</html>
