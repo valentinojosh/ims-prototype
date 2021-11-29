@@ -247,3 +247,28 @@ table.form-table{
 .submit-button{
     text-align: center;
 }
+#AgencyName, #NameOfPersonCompleting, #TitleOfPersonCompletingReport, #BusinessEmail,
+#HowDidIncidentOccur1, #HowDidIncidentOccur2, #HowDidIncidentOccur3, #NameOfLocation,
+#StreetAddressIncidentLocation, #CityStateIncidentLocation, #LocationSpecify1,
+#LocationSpecify2, #PrimaryLocation, #EstimateOfLoss, #ContactPersonFacility,
+#ContactPersonEmail, #PersonResponsible, #PersonResponsibleName,
+#PersonResponsibleStreetAddress, #WhatPoliceAgency, #PoliceReportNumber,
+#WereCriminalCharges {
+    width: 100%;
+}
+.endInput {
+    padding-right: 15px;
+}
+.inputGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.s3-right {
+    color: #231F20;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 9pt;
+    text-align: right;
+}

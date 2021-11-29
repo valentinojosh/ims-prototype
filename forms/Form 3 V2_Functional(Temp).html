@@ -58,12 +58,15 @@
             </td>
             <td style="width:283pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:2pt;border-bottom-color:#24418E">
                 <p class="s3" style="text-indent: 0pt;text-align: left;">Agency name</p>
-                <input type="text" id="fname" name="">
+                <input type="text" id="AgencyName" name="">
             </td>
             <td style="width:41pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-bottom-style:solid;border-bottom-width:2pt;border-bottom-color:#24418E">
                 <p style="text-indent: 0pt;text-align: left;"><br/></p></td>
             <td style="width:202pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-bottom-style:solid;border-bottom-width:2pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E">
-                <p class="s3" style="padding-left: 36pt;text-indent: 0pt;text-align: left;">Today’s date</p></td>
+                <p class="s3" style="text-indent: 0pt;text-align: left;">Today’s date</p>
+                <input type="date" id="TodaysDate" name="" value="" min="2021-01-01" max="2050-01-01">
+            </td>
+
         </tr>
 
         <tr style="height:22pt">
@@ -72,13 +75,16 @@
             </td>
             <td style="width:283pt;border-top-style:solid;border-top-width:2pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E">
                 <p class="s3" style="text-indent: 0pt;line-height: 10pt;text-align: left;">Date of incident (mm/dd/yyyy)</p>
+                <input type="date" id="DateOfIncident" name="" value="" min="2021-01-01" max="2050-01-01">
             </td>
 
             <td style="width:41pt;border-top-style:solid;border-top-width:2pt;border-top-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E">
                 <p style="text-indent: 0pt;text-align: left;"><br/></p></td>
             <td style="width:202pt;border-top-style:solid;border-top-width:2pt;border-top-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E">
                 <p class="s3" style="text-indent: 0pt;line-height: 10pt;text-align: left;">Time of incident (hh/mm,
-                    a.m./p.m.)</p></td>
+                    a.m./p.m.)</p>
+                <input type="time" id="TimeOfIncident" name="" min="09:00" max="18:00" required>
+            </td>
         </tr>
 
         <tr style="height:22pt">
@@ -87,15 +93,13 @@
             </td>
             <td style="width:283pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E">
                 <p class="s3" style="text-indent: 0pt;text-align: left;">Name of person completing the report</p>
-                <p class="s4" style="padding-top: 1pt;text-indent: 0pt;line-height: 8pt;text-align: left;">Jason
-                    Posluszny</p></td>
+                <input type="text" id="NameOfPersonCompleting" name="">
             <td style="width:41pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E">
                 <p style="text-indent: 0pt;text-align: left;"><br/></p></td>
             <td style="width:202pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E">
                 <p class="s3" style="text-indent: 0pt;text-align: left;">Title of person completing report</p>
-                <p class="s4"
-                   style="padding-top: 1pt;padding-left: 2pt;text-indent: 0pt;line-height: 8pt;text-align: left;">Operations
-                    Manager</p></td>
+                <div class="endInput"><input type="text" id="TitleOfPersonCompletingReport" name=""></div>
+            </td>
         </tr>
 
         <tr style="height:21pt">
@@ -104,15 +108,14 @@
             </td>
             <td style="width:283pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:2pt;border-bottom-color:#24418E">
                 <p class="s3" style="text-indent: 0pt;text-align: left;">Business phone</p>
-                <p class="s4"
-                   style="padding-top: 1pt;padding-left: 1pt;text-indent: 0pt;line-height: 8pt;text-align: left;">
-                    630.907.1114</p></td>
+                <input type="tel" id="BuisnessPhone" name="phone" placeholder="000-000-0000"
+                       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
             <td style="width:41pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-bottom-style:solid;border-bottom-width:2pt;border-bottom-color:#24418E">
                 <p style="text-indent: 0pt;text-align: left;"><br/></p></td>
             <td style="width:202pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-bottom-style:solid;border-bottom-width:2pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E">
                 <p class="s3" style="text-indent: 0pt;text-align: left;">Business email</p>
-                <p style="padding-left: 2pt;text-indent: 0pt;line-height: 9pt;text-align: left;"><a
-                        class="s6" href="mailto:jasonp@fvsra.org">jasonp@fvsra.org</a></p></td>
+                <div class="endInput"><input type="text" id="BusinessEmail" name=""></div>
+            </td>
         </tr>
 
         <tr style="height:25pt">
@@ -121,25 +124,32 @@
             </td>
             <td colspan="3"
                 style="width:526pt;border-top-style:solid;border-top-width:2pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p class="s3" style="text-indent: 0pt;line-height: 10pt;text-align: left;">How did the incident
-                occur and what property was damaged? (Provide a brief factual summary.)</p></td>
+                occur and what property was damaged? (Provide a brief factual summary.)</p>
+            </td>
         </tr>
 
         <tr style="height:20pt">
             <td bgcolor="#24418E" style="width:14pt"><p style="text-indent: 0pt;text-align: left;"><br/></p></td>
             <td colspan="3"
-                style="width:526pt;border-top-style:solid;border-top-width:1pt;border-top-color:#231F20;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p style="text-indent: 0pt;text-align: left;"><br/></p></td>
+                style="width:526pt;border-top-style:solid;border-top-width:1pt;border-top-color:#231F20;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+                <div class="endInput"><input type="text" id="HowDidIncidentOccur1" name=""></div>
+            </td>
         </tr>
 
         <tr style="height:20pt">
             <td bgcolor="#24418E" style="width:14pt"><p style="text-indent: 0pt;text-align: left;"><br/></p></td>
             <td colspan="3"
-                style="width:526pt;border-top-style:solid;border-top-width:1pt;border-top-color:#231F20;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p style="text-indent: 0pt;text-align: left;"><br/></p></td>
+                style="width:526pt;border-top-style:solid;border-top-width:1pt;border-top-color:#231F20;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+                <div class="endInput"><input type="text" id="HowDidIncidentOccur2" name=""></div>
+            </td>
         </tr>
 
         <tr style="height:4pt">
             <td bgcolor="#24418E" style="width:14pt"><p style="text-indent: 0pt;text-align: left;"><br/></p></td>
             <td colspan="3"
-                style="width:526pt;border-top-style:solid;border-top-width:1pt;border-top-color:#231F20;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p style="text-indent: 0pt;text-align: left;"><br/></p></td>
+                style="width:526pt;border-top-style:solid;border-top-width:1pt;border-top-color:#231F20;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+                <div class="endInput"><input type="text" id="HowDidIncidentOccur3" name=""></div>
+            </td>
         </tr>
 
         <tr style="height:23pt">
@@ -150,7 +160,9 @@
                 style="border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:2pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p class="s3" style="text-indent: 0pt;text-align: left;">Name of the location (park, pool,
                 community center; <span class="s7">Ex. Smith Pool, Johnson Community Center</span>) or nearest intersection
             </p>
-                <p class="s3" style="text-indent: 0pt;text-align: left;">where the incident occurred.</p></td>
+                <p class="s3" style="text-indent: 0pt;text-align: left;">where the incident occurred.</p>
+                <div class="endInput"><input type="text" id="NameOfLocation" name=""></div>
+            </td>
         </tr>
         <tr style="height:19pt">
             <td class="blue-boxes">
@@ -164,16 +176,22 @@
             <td bgcolor="#24418E" style="width:14pt"><p style="text-indent: 0pt;text-align: left;"><br/></p></td>
             <td colspan="3"
                 style="width:526pt;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p class="s3" style="padding-top: 4pt;text-indent: 0pt;text-align: left;">Street address</p>
+                <div class="endInput"><input type="text" id="StreetAddressIncidentLocation" name=""></div>
             </td>
         </tr>
         <tr style="height:27pt">
             <td bgcolor="#24418E" style="width:14pt"><p style="text-indent: 0pt;text-align: left;"><br/></p></td>
             <td style="width:283pt;border-top-style:solid;border-top-width:1pt;border-top-color:#231F20;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20">
-                <p class="s3" style="text-indent: 0pt;text-align: left;">City State</p></td>
+                <p class="s3" style="text-indent: 0pt;text-align: left;">City State</p>
+                <div class="endInput"><input type="text" id="CityStateIncidentLocation" name="" placeholder="City, State"></div>
+            </td>
             <td style="width:41pt;border-top-style:solid;border-top-width:1pt;border-top-color:#231F20;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20">
                 <p style="text-indent: 0pt;text-align: left;"><br/></p></td>
             <td style="width:202pt;border-top-style:solid;border-top-width:1pt;border-top-color:#231F20;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E">
-                <p class="s3" style="padding-left: 36pt;text-indent: 0pt;text-align: left;">Zip code</p></td>
+                <p class="s3" style="text-indent: 0pt;text-align: left;">Zip code</p>
+                <input type="tel" id="ZipCode" name="phone" placeholder="00000"
+                       pattern="[0-9]{5}" required>
+            </td>
         </tr>
         <tr style="height:5pt">
             <td bgcolor="#24418E" style="width:14pt"><p style="text-indent: 0pt;text-align: left;"><br/></p></td>
@@ -189,17 +207,22 @@
                 exact type of location/facility damaged, listing multiple locations/facilities if necessary. <span
                         class="s7">Ex. mainte-</span></p>
                 <p class="s7" style="padding-left: 1pt;text-indent: 0pt;text-align: left;">nance garage, sports field<span
-                        class="s3">)</span></p></td>
+                        class="s3">)</span></p>
+            </td>
         </tr>
         <tr style="height:22pt">
             <td bgcolor="#24418E" style="width:14pt"><p style="text-indent: 0pt;text-align: left;"><br/></p></td>
             <td colspan="3"
-                style="width:526pt;border-top-style:solid;border-top-width:1pt;border-top-color:#231F20;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p style="text-indent: 0pt;text-align: left;"><br/></p></td>
+                style="width:526pt;border-top-style:solid;border-top-width:1pt;border-top-color:#231F20;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+                <div class="endInput"><input type="text" id="LocationSpecify1" name=""></div>
+            </td>
         </tr>
         <tr style="height:6pt">
             <td bgcolor="#24418E" style="width:14pt"><p style="text-indent: 0pt;text-align: left;"><br/></p></td>
             <td colspan="3"
-                style="width:526pt;border-top-style:solid;border-top-width:1pt;border-top-color:#231F20;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p style="text-indent: 0pt;text-align: left;"><br/></p></td>
+                style="width:526pt;border-top-style:solid;border-top-width:1pt;border-top-color:#231F20;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p style="text-indent: 0pt;text-align: left;"><br/></p>
+                <div class="endInput"><input type="text" id="LocationSpecify2" name=""></div>
+            </td>
         </tr>
         <tr style="height:24pt">
             <td class="blue-boxes">
@@ -207,36 +230,46 @@
             </td>
             <td colspan="3"
                 style="width:526pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p class="s3" style="text-indent: 0pt;text-align: left;">Primary location (Identify the exact
-                area of damage. <span class="s7">Ex. tool storage, batting cage</span>)</p></td>
+                area of damage. <span class="s7">Ex. tool storage, batting cage</span>)</p>
+                <div class="endInput"><input type="text" id="PrimaryLocation" name=""></div>
+            </td>
         </tr>
         <tr style="height:23pt">
             <td class="blue-boxes">
                 10
             </td>
             <td colspan="3"
-                style="width:526pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p class="s3" style="text-indent: 0pt;text-align: left;">Estimate of loss</p></td>
+                style="width:526pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p class="s3" style="text-indent: 0pt;text-align: left;">Estimate of loss</p>
+                <div class="endInput"><input type="text" id="EstimateOfLoss" name=""></div>
+            </td>
         </tr>
         <tr style="height:24pt">
             <td class="blue-boxes">
                 11
             </td>
             <td colspan="3"
-                style="width:526pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p class="s3" style="text-indent: 0pt;text-align: left;">Contact person at facility</p></td>
+                style="width:526pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p class="s3" style="text-indent: 0pt;text-align: left;">Contact person at facility</p>
+                <div class="endInput"><input type="text" id="ContactPersonFacility" name=""></div>
+            </td>
         </tr>
         <tr style="height:23pt">
             <td class="blue-boxes">
                 12
             </td>
             <td colspan="3"
-                style="width:526pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:2pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p class="s3" style="text-indent: 0pt;text-align: left;">Contact person’s email</p></td>
+                style="width:526pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:2pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p class="s3" style="text-indent: 0pt;text-align: left;">Contact person’s email</p>
+                <div class="endInput"><input type="text" id="ContactPersonEmail" name=""></div>
+            </td>
         </tr>
         <tr style="height:23pt">
             <td class="blue-boxes">
                 13
             </td>
             <td colspan="3"
-                style="width:526pt;border-top-style:solid;border-top-width:2pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p class="s3" style="text-indent: 0pt;line-height: 10pt;text-align: left;">Contact person’s
-                phone number</p></td>
+                style="width:526pt;border-top-style:solid;border-top-width:2pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p class="s3" style="text-indent: 0pt;line-height: 10pt;text-align: left;">Contact person’s phone number</p>
+                <input type="tel" id="ContactPersonPhoneNumber" name="phone" placeholder="000-000-0000"
+                       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            </td>
         </tr>
         <tr style="height:22pt">
             <td class="blue-boxes">
@@ -246,10 +279,31 @@
                 <p class="s3" style="text-indent: 0pt;line-height: 10pt;text-align: left;">Was damage caused by third-party
                     (non-agency) individual?</p></td>
             <td style="width:41pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E">
-                <p class="s3" style="text-indent: 0pt;line-height: 10pt;text-align: right;">Yes</p></td>
+                <div class="inputGrid">
+                    <div class="s3-right">Yes</div>
+                    <div class="centerInput">
+                        <input type="checkbox" id="YesDamageThirdParty" name="">
+                    </div>
+                </div>
+
+<!--                <p class="s3" style="text-indent: 0pt;line-height: 10pt;text-align: right;">Yes <div class="centerInput"><input type="checkbox" id="horns" name="horns"></div></p>-->
+            </td>
             <td style="width:202pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E">
-                <p class="s3" style="padding-right: 33pt;text-indent: 0pt;line-height: 10pt;text-align: right;">No
-                    Unknown</p></td>
+                <div class="inputGrid">
+                    <div class="inputGrid">
+                        <div class="s3-right">No</div>
+                        <div class="centerInput">
+                            <input type="checkbox" id="NoDamageThirdParty" name="">
+                        </div>
+                    </div>
+                    <div class="inputGrid">
+                        <div class="s3-right">Unknown</div>
+                        <div class="centerInput">
+                            <input type="checkbox" id="UnkownDamageThirdParty" name="">
+                        </div>
+                    </div>
+                </div>
+            </td>
         </tr>
         <tr style="height:27pt">
             <td class="blue-boxes">
@@ -262,18 +316,27 @@
         </tr>
         <tr style="height:36pt">
             <td bgcolor="#24418E" style="width:14pt"><p style="text-indent: 0pt;text-align: left;"><br/></p></td>
-            <td colspan="3"
-                style="width:526pt;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p class="s3" style="padding-top: 5pt;text-indent: 0pt;text-align: left;">Name Street
-                address</p></td>
+            <td style="width:283pt;border-top-style:solid;border-top-width:1pt;border-top-color:#231F20;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20">
+                <p class="s3" style="padding-top: 1pt;text-indent: 0pt;text-align: left;">Name</p>
+                <div class="endInput"><input type="text" id="PersonResponsibleName" name=""></div>
+            </td>
+
+            <td colspan="2" style="width:202pt;border-top-style:solid;border-top-width:1pt;border-top-color:#231F20;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E">
+                <p class="s3" style="padding-top: 1pt;text-indent: 0pt;text-align: left;">Street address</p>
+                <div class="endInput"><input type="text" id="PersonResponsibleStreetAddress" name=""></div>
+            </td>
+
         </tr>
         <tr style="height:29pt">
             <td bgcolor="#24418E" style="width:14pt"><p style="text-indent: 0pt;text-align: left;"><br/></p></td>
             <td style="width:283pt;border-top-style:solid;border-top-width:1pt;border-top-color:#231F20;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20">
-                <p class="s3" style="padding-top: 1pt;text-indent: 0pt;text-align: left;">City State</p></td>
-            <td style="width:41pt;border-top-style:solid;border-top-width:1pt;border-top-color:#231F20;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20">
-                <p style="text-indent: 0pt;text-align: left;"><br/></p></td>
-            <td style="width:202pt;border-top-style:solid;border-top-width:1pt;border-top-color:#231F20;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E">
-                <p class="s3" style="padding-top: 1pt;padding-left: 36pt;text-indent: 0pt;text-align: left;">Zip code</p>
+                <p class="s3" style="padding-top: 1pt;text-indent: 0pt;text-align: left;">City State</p>
+                <div class="endInput"><input type="text" id="PersonResponsible" name="" placeholder="City, State"></div>
+            </td>
+            <td colspan="2" style="width:202pt;border-top-style:solid;border-top-width:1pt;border-top-color:#231F20;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E">
+                <p class="s3" style="padding-top: 1pt;text-indent: 0pt;text-align: left;">Zip code</p>
+                <input type="tel" id="ZipCodePersonResponsible" name="phone" placeholder="00000"
+                       pattern="[0-9]{5}" required>
             </td>
         </tr>
         <tr style="height:7pt">
@@ -289,14 +352,31 @@
                 <p class="s3" style="text-indent: 0pt;text-align: left;">Has a police agency conducted an investigation?</p>
             </td>
             <td style="width:41pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E">
-                <p class="s8" style="text-indent: 0pt;text-align: right;"><span><img alt="image" height="20" src="PDRMA%20Form%2003%20Property%20Loss%20Report_files/Image_002.png"
-                                                                                     width="24"/></span>
-                    <span class="s3">Yes</span></p></td>
+                <p class="s8" style="text-indent: 0pt;text-align: right;">
+                <div class="inputGrid">
+                    <div class="s3-right">Yes</div>
+                    <div class="centerInput">
+                        <input type="checkbox" id="PoliceInvestigationYes" name="">
+                    </div>
+                </div>
+            </td>
             <td style="width:202pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E">
-                <p class="s3" style="padding-right: 33pt;text-indent: 0pt;text-align: right;"><span><img alt="image" height="20" src="PDRMA%20Form%2003%20Property%20Loss%20Report_files/Image_003.png" width="24"/></span>
-                    <span class="s8"> </span>No <span><img alt="image" height="20" src="PDRMA%20Form%2003%20Property%20Loss%20Report_files/Image_004.png"
-                                                         width="24"/></span><span
-                        class="s9"> </span>Unknown</p></td>
+                <p class="s3" style="padding-right: 33pt;text-indent: 0pt;text-align: right;">
+                <div class="inputGrid">
+                    <div class="inputGrid">
+                        <div class="s3-right">No</div>
+                        <div class="centerInput">
+                            <input type="checkbox" id="PoliceInvestigationNo" name="">
+                        </div>
+                    </div>
+                    <div class="inputGrid">
+                        <div class="s3-right">Unknown</div>
+                        <div class="centerInput">
+                            <input type="checkbox" id="PoliceInvestigationUnkown" name="">
+                        </div>
+                    </div>
+                </div>
+            </td>
         </tr>
         <tr style="height:23pt">
             <td class="blue-boxes">
@@ -304,12 +384,15 @@
             </td>
             <td style="width:283pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E">
                 <p class="s3" style="padding-left: 1pt;text-indent: 0pt;line-height: 10pt;text-align: left;">What police
-                    agency investigated the incident?</p></td>
-            <td style="width:41pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E">
-                <p style="text-indent: 0pt;text-align: left;"><br/></p></td>
-            <td style="width:202pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E">
+                    agency investigated the incident?</p>
+                <div class="endInput"><input type="text" id="WhatPoliceAgency" name=""></div>
+            </td>
+
+            <td colspan="2" style="width:202pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E">
                 <p class="s3" style="text-indent: 0pt;line-height: 10pt;text-align: left;">What is the police report
-                    number?</p></td>
+                    number?</p>
+                <div class="endInput"><input type="text" id="PoliceReportNumber" name=""></div>
+            </td>
         </tr>
         <tr style="height:23pt">
             <td class="blue-boxes-bottom">
@@ -317,7 +400,9 @@
             </td>
             <td colspan="3"
                 style="width:526pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p class="s3" style="text-indent: 0pt;text-align: left;">Were criminal charges brought against
-                the responsible party? If yes, what were the charges?</p></td>
+                the responsible party? If yes, what were the charges?</p>
+                <div class="endInput"><input type="text" id="WereCriminalCharges" name=""></div>
+            </td>
         </tr>
     </table>
     <div class="submit-button"><input type="button" value="Submit" onclick=""></div>
