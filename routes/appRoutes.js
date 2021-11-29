@@ -11,9 +11,9 @@ module.exports = function (app) {
     var form01 = require('../controller/accidentIncidentAppController') //This is what I'm working on next
     app.route('/fvsra/accidentIncidentReport')
         .get(form01.list_all_accidentIncidentReports)
-    app.route('/fvsra/accidentIncidentReport')
-        .get(form01.createAccidentIncidentReport) //Not Tested
-        .delete(form01.deleteAccidentIncidentReport) //Not Tested
+    app.route('/fvsra/accidentIncidentReport/:accident_incident_id')
+        .get(form01.read_a_accidentIncidentReport)
+        .delete(form01.deleteAccidentIncidentReport)
 
     var form02 = require('../controller/vehicleAccidentAppController');
     // todoList2 Routes
@@ -28,8 +28,8 @@ module.exports = function (app) {
     // todoList3 Routes
     app.route('/fvsra/employeeInjuryReport')
         .get(form04.list_all_employeeInjuryReports)
-    app.route('/fvsra/employeeInjuryReport')
-        .get(form04.read_a_employeeInjuryReport) //Not Tested
-        .delete(form04.deleteMinorIncident) //Not Tested
+    app.route('/fvsra/employeeInjuryReport/:employee_injury_id')
+        .get(form04.read_a_employeeInjuryReport)
+        .delete(form04.deleteMinorIncident)
 
 };
