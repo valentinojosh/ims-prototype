@@ -272,3 +272,6 @@ table.form-table{
     font-size: 9pt;
     text-align: right;
 }
+.center-text{
+    text-align: center;
+}
