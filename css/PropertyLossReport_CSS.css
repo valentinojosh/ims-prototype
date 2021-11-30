@@ -247,10 +247,9 @@ table.form-table{
 .submit-button{
     text-align: center;
 }
-#AgencyName, #NameOfPersonCompleting, #TitleOfPersonCompletingReport, #BusinessEmail,
-#HowDidIncidentOccur1, #HowDidIncidentOccur2, #HowDidIncidentOccur3, #NameOfLocation,
-#StreetAddressIncidentLocation, #CityStateIncidentLocation, #LocationSpecify1,
-#LocationSpecify2, #PrimaryLocation, #EstimateOfLoss, #ContactPersonFacility,
+#AgencyName, #Name_of_person_completing_the_report, #Title_of_person_completing_report, #Business_email,
+#How_did_the_incident_occur_and_what_property_was_damaged, #HowDidIncidentOccur2, #HowDidIncidentOccur3, #NameOfLocation,
+#StreetAddressIncidentLocation, #CityStateIncidentLocation, #LocationSpecify, #PrimaryLocation, #EstimateOfLoss, #ContactPersonFacility,
 #ContactPersonEmail, #PersonResponsible, #PersonResponsibleName,
 #PersonResponsibleStreetAddress, #WhatPoliceAgency, #PoliceReportNumber,
 #WereCriminalCharges {
@@ -274,4 +273,7 @@ table.form-table{
 }
 .center-text{
     text-align: center;
+}
+input {
+    background-color: #E8E8E8;
 }
