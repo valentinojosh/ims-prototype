@@ -16,13 +16,20 @@ module.exports = function (app) {
         .delete(form01.deleteAccidentIncidentReport)
 
     var form02 = require('../controller/vehicleAccidentAppController');
-    // todoList2 Routes
     app.route('/fvsra/vehicleAccidentReport')
         .get(form02.list_all_vehicleAccidents)
         .post(form02.createVehicleAccident)
     app.route('/fvsra/vehicleAccidentReport/:vehicle_accident_id')
         .get(form02.read_a_vehicleAccident)
         .delete(form02.deleteVehicleAccident)
+
+    var form03 = require('../controller/propertyLossAppController');
+    app.route('/fvsra/propertyLossReport')
+        .get(form03.list_all_propertyLosses)
+        .post(form03.createPropertyLossReport)
+    app.route('/fvsra/propertyLossReport/:property_loss_id')
+        .get(form03.read_a_propertyLossReport) //Not Tested
+        .delete(form03.deletePropertyLoss)
 
     var form04 = require('../controller/employeeInjuryReportAppController'); //Waiting for the DB table to be finished
     // todoList3 Routes
