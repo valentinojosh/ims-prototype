@@ -24,7 +24,7 @@ exports.createPropertyLossReport = function (req, res) {
     if (false) {
         res.status(400).send({error: true, message: 'Please provide minor incident'});
     } else {
-        propertyLoss.createPropertyLossReport(propertyLoss, function (err, item) {
+        propertyLoss.createPropertyLossReport(new_propertyLoss, function (err, item) {
             if (err) res.send(err);
             res.json(item);
         });
