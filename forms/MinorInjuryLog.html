@@ -5,6 +5,13 @@
     <title>Minor Injury Log | FVSRA</title>
     <link rel="icon" type="image/png" href="../images/icons/FVSRA_ICON.png"/>
     <link rel="stylesheet" href="../css/MinorInjuryLogCSS.css">
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+
+    </script>
+    <script src="../js/ReportMinorInjuryLog.js"></script>
     <meta name = "viewport" content="width=device-width">
 </head>
 <body>
@@ -37,12 +44,12 @@
     <tr>
         <td><input type="date" name="date" id="date"></td>
         <td><input type="time" name="time" id="time"></td>
-        <td><input type="text" placeholder="i.e Incision" name="injury" id="injury"></td>
-        <td><input type="text" placeholder="i.e Right Leg" name="injury-location" id="injury-location"></td>
-        <td><input type="text" placeholder="i.e Bandage" name="treatment" id="treatment"></td>
-        <td><input type="text" placeholder="i.e Slipped on wet floor" name="injury-occur" id="injury-occur"></td>
-        <td><input type="text" placeholder="i.e Food Court" name="facility" id="facility"></td>
-        <td><input type="text" placeholder="John Doe" name="staff-name" id="staff-name"></td>
+        <td><input type="text" placeholder="i.e Incision" name="injury" id="injury" required></td>
+        <td><input type="text" placeholder="i.e Right Leg" name="injury-location" id="injury-location" required></td>
+        <td><input type="text" placeholder="i.e Bandage" name="treatment" id="treatment" required></td>
+        <td><input type="text" placeholder="i.e Slipped on wet floor" name="injury-occur" id="injury-occur" required></td>
+        <td><input type="text" placeholder="i.e Food Court" name="facility" id="facility" required></td>
+        <td><input type="text" placeholder="John Doe" name="staff-name" id="staff-name" required></td>
     </tr>
     </tbody>
 </table>
@@ -50,6 +57,6 @@
 
 </body>
 <footer class="bottom">
-    <button class="submit">Submit</button>
+    <button class="submit" onclick="submitBtn()">Submit</button>
 </footer>
 </html>
