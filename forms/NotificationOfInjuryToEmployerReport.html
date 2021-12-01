@@ -294,196 +294,76 @@
     <div class="header-body-space"></div>
     <form>
         <table class="form-table">
+            <tr style="height:22pt">
+                <td class="blue-boxes">
+                    9
+                </td>
+                <td colspan="2" style="width:283pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E">
+                    <p class="s3" style="text-indent: 0pt;line-height: 10pt;text-align: left;">Have you injured this body part previously?</p>
+                </td>
+                <td style="width:202pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E">
+                    <div class="inputGrid">
+                        <div class="inputGrid">
+                            <div class="s3-right">Yes</div>
+                            <div class="centerInput">
+                                <input type="radio" value="No" id="DamageThirdPartyNo" name="DamageThirdParty">
+                            </div>
+                        </div>
+                        <div class="inputGrid">
+                            <div class="s3-right">No</div>
+                            <div class="centerInput">
+                                <input type="radio" value="Unknown" id="DamageThirdPartyUnknown" name="DamageThirdParty" checked>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr style="height:27pt">
+                <td bgcolor="#24418E" style="width:14pt"><p style="text-indent: 0pt;text-align: left;"><br/></p></td>
+                <td colspan="3" style="width:202pt;border-top-style:none;border-top-width:1pt;border-top-color:#231F20;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E">
+                    <p class="s3" style="text-indent: 0pt;text-align: left;">If yes, please describe which body part and what the prior injury was.</p>
+                    <div class="endInput"><input type="text" id="Reported_to" name="Reported_to"></div>
+                </td>
+            </tr>
+
 
             <tr style="height:21pt">
-                <td class="blue-boxes-top">
-                    1
-                </td>
+                <td class="blue-boxes-top"></td>
                 <td colspan="3" style="width:283pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:2pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E">
-                    <p class="s3" style="text-indent: 0pt;text-align: left;">Employee name</p>
+                    <p class="s3" style="text-indent: 0pt;text-align: left;">If yes, where did you receive treatment?</p>
                     <div class="endInput"><input type="text" id="Employee_Name" name="Employee_Name"></div>
                 </td>
             </tr>
 
-            <tr style="height:22pt">
-                <td class="blue-boxes">
-                    2
-                </td>
-                <td style="width:283pt;border-top-style:solid;border-top-width:2pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E">
-                    <p class="s3" style="text-indent: 0pt;line-height: 10pt;text-align: left;">Date of incident (mm/dd/yyyy)</p>
-                    <input type="date" id="Date_of_Incident" name="Date_of_Incident" value="" min="2021-01-01" max="2050-01-01">
-                </td>
-
-                <td style="width:41pt;border-top-style:solid;border-top-width:2pt;border-top-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E">
-                    <p style="text-indent: 0pt;text-align: left;"><br/></p></td>
-                <td style="width:202pt;border-top-style:solid;border-top-width:2pt;border-top-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E">
-                    <p class="s3" style="text-indent: 0pt;line-height: 10pt;text-align: left;">Time of incident (hh/mm,
-                        a.m./p.m.)</p>
-                    <input type="time" id="Time_of_Incident" name="Time_of_Incident">
-                </td>
-            </tr>
 
             <tr style="height:25pt">
-                <td class="blue-boxes-top">
-                    3
-                </td>
-                <td colspan="3" style="width:283pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:2pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E">
-                    <p class="s3" style="text-indent: 0pt;text-align: left;">Specific location of acident. (Ex. Second floor hallway of recreation center, storage closet of maintenance shed, south entrance of aquatic facility, etc.)</p>
-                    <div class="endInput"><input type="text" id="Employee_Name" name="Employee_Name"></div>
-                </td>
-            </tr>
-
-            <tr style="height:22pt">
-                <td class="blue-boxes">
-                    4
-                </td>
-                <td colspan="2" style="width:283pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E">
-                    <p class="s3" style="text-indent: 0pt;line-height: 10pt;text-align: left;">Are you reporting the injury for the first time using this form?</p>
-                </td>
-                <td style="width:202pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E">
-                    <div class="inputGrid">
-                        <div class="inputGrid">
-                            <div class="s3-right">Yes</div>
-                            <div class="centerInput">
-                                <input type="radio" value="No" id="DamageThirdPartyNo" name="DamageThirdParty">
-                            </div>
-                        </div>
-                        <div class="inputGrid">
-                            <div class="s3-right">No</div>
-                            <div class="centerInput">
-                                <input type="radio" value="Unknown" id="DamageThirdPartyUnknown" name="DamageThirdParty" checked>
-                            </div>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-
-            <tr style="height:25pt">
-                <td class="blue-boxes">
-
-                </td>
+                <td class="blue-boxes"></td>
                 <td colspan="3"
                     style="width:526pt;border-top-style:none;border-top-width:2pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:none;border-bottom-width:1pt;border-bottom-color:#231F20;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p class="s3" style="text-indent: 0pt;line-height: 10pt;text-align: left;">
-                    If no, when did you first report the injury (verbally or in writing) and to whom did you report it?
+                    The above information is true and accurate:
                 </p>
                 </td>
             </tr>
 
             <tr style="height:27pt">
                 <td bgcolor="#24418E" style="width:14pt"><p style="text-indent: 0pt;text-align: left;"><br/></p></td>
-                <td style="width:283pt;border-top-style:none;border-top-width:1pt;border-top-color:#231F20;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20">
-                    <p class="s3" style="text-indent: 0pt;line-height: 10pt;text-align: left;">Date</p>
-                    <input type="date" id="Date_of_Incident" name="Date_of_Incident" value="" min="2021-01-01" max="2050-01-01">
-                </td>
-                <td style="width:283pt;border-top-style:none;border-top-width:1pt;border-top-color:#231F20;border-left-style:none;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20">
-                    <p class="s3" style="text-indent: 0pt;line-height: 10pt;text-align: left;">Time</p>
-                    <input type="time" id="Time_of_Incident" name="Time_of_Incident">
-                </td>
-                <td style="width:202pt;border-top-style:none;border-top-width:1pt;border-top-color:#231F20;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E">
-                    <p class="s3" style="text-indent: 0pt;text-align: left;">Reported to</p>
+                <td colspan="2" style="width:283pt;border-top-style:none;border-top-width:1pt;border-top-color:#231F20;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:none;border-bottom-width:1pt;border-bottom-color:#231F20">
+                    <p class="s3" style="text-indent: 0pt;text-align: left;">(Employee Signature)</p>
                     <div class="endInput"><input type="text" id="Reported_to" name="Reported_to"></div>
                 </td>
-            </tr>
-
-
-
-            <tr style="height:23pt">
-                <td class="blue-boxes">
-                    5
-                </td>
-                <td colspan="3"
-                    style="border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:2pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p class="s3" style="text-indent: 0pt;text-align: left;">Describe how the injury occurred. (Identify the job task you were doing and include a step-by-step explanation of what led to the injury.)
-                </p>
-                    <div class="endInput"><input type="text" id="NameOfLocation" name="NameOfLocation"></div>
-                </td>
-            </tr>
-            <tr style="height:23pt">
-                <td class="blue-boxes">
-                    6
-                </td>
-                <td colspan="3"
-                    style="border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:2pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p class="s3" style="text-indent: 0pt;text-align: left;">Name all people present at the time of injury (e.g., coworkers and/or witnesses)
-                </p>
-                    <div class="endInput"><input type="text" id="NameOfLocation" name="NameOfLocation"></div>
-                </td>
-            </tr>
-            <tr style="height:23pt">
-                <td class="blue-boxes">
-                    7
-                </td>
-                <td colspan="3"
-                    style="border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:2pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p class="s3" style="text-indent: 0pt;text-align: left;">Identify all body parts you injured. (Be specific. Indicate left or right, upper or lower.)
-                </p>
-                    <div class="endInput"><input type="text" id="NameOfLocation" name="NameOfLocation"></div>
-                </td>
-            </tr>
-
-
-            <tr style="height:22pt">
-                <td class="blue-boxes">
-                    4
-                </td>
-                <td colspan="2" style="width:283pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E">
-                    <p class="s3" style="text-indent: 0pt;line-height: 10pt;text-align: left;">Are you reporting the injury for the first time using this form?</p>
-                </td>
-                <td style="width:202pt;border-top-style:solid;border-top-width:1pt;border-top-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E">
-                    <div class="inputGrid">
-                        <div class="inputGrid">
-                            <div class="s3-right">Yes</div>
-                            <div class="centerInput">
-                                <input type="radio" value="No" id="DamageThirdPartyNo" name="DamageThirdParty">
-                            </div>
-                        </div>
-                        <div class="inputGrid">
-                            <div class="s3-right">No</div>
-                            <div class="centerInput">
-                                <input type="radio" value="Unknown" id="DamageThirdPartyUnknown" name="DamageThirdParty" checked>
-                            </div>
-                        </div>
-                    </div>
+                <td style="width:202pt;border-top-style:none;border-top-width:1pt;border-top-color:#231F20;border-bottom-style:none;border-bottom-width:1pt;border-bottom-color:#231F20;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E">
+                    <p class="s3" style="text-indent: 0pt;line-height: 10pt;text-align: left;">Date</p>
+                    <input type="date" id="Date_of_Incident" name="Date_of_Incident" value="" min="2021-01-01" max="2050-01-01">
                 </td>
             </tr>
 
             <tr style="height:25pt">
-                <td class="blue-boxes">
-
-                </td>
+                <td class="blue-boxes"></td>
                 <td colspan="3"
-                    style="width:526pt;border-top-style:none;border-top-width:2pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:none;border-bottom-width:1pt;border-bottom-color:#231F20;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p class="s3" style="text-indent: 0pt;line-height: 10pt;text-align: left;">
-                    If no, when did you first report the injury (verbally or in writing) and to whom did you report it?
-                </p>
-                </td>
+                    style="width:526pt;border-top-style:none;border-top-width:2pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"></td>
             </tr>
-
-            <tr style="height:27pt">
-                <td bgcolor="#24418E" style="width:14pt"><p style="text-indent: 0pt;text-align: left;"><br/></p></td>
-                <td style="width:283pt;border-top-style:none;border-top-width:1pt;border-top-color:#231F20;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20">
-                    <p class="s3" style="text-indent: 0pt;line-height: 10pt;text-align: left;">Date</p>
-                    <input type="date" id="Date_of_Incident" name="Date_of_Incident" value="" min="2021-01-01" max="2050-01-01">
-                </td>
-                <td style="width:283pt;border-top-style:none;border-top-width:1pt;border-top-color:#231F20;border-left-style:none;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20">
-                    <p class="s3" style="text-indent: 0pt;line-height: 10pt;text-align: left;">Time</p>
-                    <input type="time" id="Time_of_Incident" name="Time_of_Incident">
-                </td>
-                <td style="width:202pt;border-top-style:none;border-top-width:1pt;border-top-color:#231F20;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#231F20;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E">
-                    <p class="s3" style="text-indent: 0pt;text-align: left;">Reported to</p>
-                    <div class="endInput"><input type="text" id="Reported_to" name="Reported_to"></div>
-                </td>
-            </tr>
-
-
-
-            <tr style="height:23pt">
-                <td class="blue-boxes">
-                    13
-                </td>
-                <td colspan="3"
-                    style="width:526pt;border-top-style:solid;border-top-width:2pt;border-top-color:#24418E;border-left-style:solid;border-left-width:1pt;border-left-color:#24418E;border-bottom-style:solid;border-bottom-width:1pt;border-bottom-color:#24418E;border-right-style:solid;border-right-width:2pt;border-right-color:#24418E"><p class="s3" style="text-indent: 0pt;line-height: 10pt;text-align: left;">Contact person’s phone number</p>
-                    <input type="tel" id="ContactPersonPhoneNumber" name="ContactPersonPhoneNumber" placeholder="000-000-0000"
-                           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                </td>
-            </tr>
-
         </table>
         <div class="center-text">
             <button name="submit4E" onclick="">Submit</button>
