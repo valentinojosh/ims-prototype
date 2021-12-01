@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>Form 3</title>
     <link rel='stylesheet' href="../css/PropertyLossReport_CSS.css"/>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+
+    </script>
     <script src="../js/PropertyLossReport.js"></script>
 </head>
 
@@ -286,7 +292,7 @@
                 <div class="inputGrid">
                     <div class="s3-right">Yes</div>
                     <div class="centerInput">
-                        <input type="checkbox" value="Yes" id="DamageThirdParty" name="DamageThirdParty">
+                        <input type="radio" value="Yes" id="DamageThirdPartyYes" name="DamageThirdParty">
                     </div>
                 </div>
 
@@ -297,13 +303,13 @@
                     <div class="inputGrid">
                         <div class="s3-right">No</div>
                         <div class="centerInput">
-                            <input type="checkbox" value="No" id="DamageThirdParty" name="DamageThirdParty">
+                            <input type="radio" value="No" id="DamageThirdPartyNo" name="DamageThirdParty">
                         </div>
                     </div>
                     <div class="inputGrid">
                         <div class="s3-right">Unknown</div>
                         <div class="centerInput">
-                            <input type="checkbox" value="Unknown" id="DamageThirdParty" name="DamageThirdParty">
+                            <input type="radio" value="Unknown" id="DamageThirdPartyUnknown" name="DamageThirdParty" checked>
                         </div>
                     </div>
                 </div>
@@ -364,7 +370,7 @@
                 <div class="inputGrid">
                     <div class="s3-right">Yes</div>
                     <div class="centerInput">
-                        <input type="checkbox" value="Yes" id="PoliceInvestigationYesNoUnknown" name="PoliceInvestigationYesNoUnknown">
+                        <input type="radio" value="Yes" id="PoliceInvestigationYes" name="PoliceInvestigation">
                     </div>
                 </div>
             </td>
@@ -374,13 +380,13 @@
                     <div class="inputGrid">
                         <div class="s3-right">No</div>
                         <div class="centerInput">
-                            <input type="checkbox" value="No" id="PoliceInvestigationYesNoUnknown" name="PoliceInvestigationYesNoUnknown">
+                            <input type="radio" value="No" id="PoliceInvestigationNo" name="PoliceInvestigation">
                         </div>
                     </div>
                     <div class="inputGrid">
                         <div class="s3-right">Unknown</div>
                         <div class="centerInput">
-                            <input type="checkbox" value="Unknown" id="PoliceInvestigationYesNoUnknown" name="PoliceInvestigationYesNoUnknown">
+                            <input type="radio" value="Unknown" id="PoliceInvestigationUnknown" name="PoliceInvestigation" checked>
                         </div>
                     </div>
                 </div>
