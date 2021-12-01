@@ -9,7 +9,7 @@ function submitBtn() {
         "treatment": document.getElementById("treatment").value,
         "how_injury_occurred": document.getElementById("injury-occur").value,
         "facility_where_injury_occurred": document.getElementById("facility").value,
-        "full_name_of_staff": document.getElementById("staff-name")
+        "full_name_of_staff": document.getElementById("staff-name").value
     }
 
     insertMinorInjuryLog(minorInjuryLogObj);
