@@ -262,6 +262,10 @@ table.form-table{
     display: grid;
     grid-template-columns: auto auto;
 }
+.inputGrid-5 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
 .s3-right {
     color: #231F20;
     font-family: Arial, sans-serif;
