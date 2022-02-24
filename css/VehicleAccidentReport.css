@@ -258,7 +258,7 @@ table.form-table{
 #DescribeInjury2-19, #LastNameBuisness2-19-2, #FirstNameBuisness2-19-2,
 #Address2-19-2, #PropertyDamage2-19-2, #AgeInjured2-19-2, #LocationTaken2-19-2,
 #DescribeInjury2-19-2, #LocationVehicle2-19, #LocationVehicle2-19-2, #LastName2-20,
-#FirstName2-20, #Address2-20{
+#FirstName2-20, #Address2-20, #Say2-20, #Where2-20, #AgencyStreet2-22, #OtherStreet2-22{
     width: 100%;
 }
 .endInput {
