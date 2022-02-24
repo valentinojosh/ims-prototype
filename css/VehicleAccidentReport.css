@@ -253,7 +253,12 @@ table.form-table{
 #AgencyDriverLast2-11, #AgencyDriverFirst2-11,
 #Address2-11, #Email2-11, #JobTitle2-11, #LocationVehicle2-13, #Area2-14, #Estimate2-15,
 #TrailerArea2-16, #TrailerLocation2-16, #EstimatedRepair2-16, #PoliceAgency2-17,
-#PoliceNumber2-17, #Details2-18, #LastNameBuisness2-19, #FirstNameBuisness2-19{
+#PoliceNumber2-17, #Details2-18, #LastNameBuisness2-19, #FirstNameBuisness2-19,
+#Address2-19, #AreaDamage2-19, #PropertyDamage2-19, #AgeInjured2-19, #LocationTaken2-19,
+#DescribeInjury2-19, #LastNameBuisness2-19-2, #FirstNameBuisness2-19-2,
+#Address2-19-2, #PropertyDamage2-19-2, #AgeInjured2-19-2, #LocationTaken2-19-2,
+#DescribeInjury2-19-2, #LocationVehicle2-19, #LocationVehicle2-19-2, #LastName2-20,
+#FirstName2-20, #Address2-20{
     width: 100%;
 }
 .endInput {
