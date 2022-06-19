@@ -482,12 +482,12 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 36px;
   }
   #hero h2 {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 24px;
     margin-bottom: 30px;
   }
   #hero .btn-get-started, #hero .btn-watch-video {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 @media (max-height: 500px) {
